@@ -62,3 +62,17 @@ new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children +
 change_in_insurance_cost = new_insurance_cost - insurance_cost
 
 print("The change in estimated cost for being smoker instead of non smoker is " + str(change_in_insurance_cost) + " dollars.")
+
+# changed smoker back to non-smoker
+smoker = 0
+
+# change num of children
+num_of_children += 2
+
+# calculating new insurance cost with 5 instead of 3 children
+new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
+
+# calculating new change in insurance cost with 5 instead of 3 children
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+
+print("The change in estimated cost for having 5 instead of 3 children is " + str(change_in_insurance_cost) + " dollars.")
