@@ -10,6 +10,7 @@ insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 240
 
 print("This person's insurance cost is " + str(insurance_cost) + " dollars.")
 
+# age change
 age += 4
 
 # calculate new insurance cost
@@ -19,3 +20,17 @@ new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children +
 change_in_insurance_cost = new_insurance_cost - insurance_cost
 
 print("The change in cost of insurance after increasing the age by 4 years is " + str(change_in_insurance_cost) + " dollars.")
+
+# age change
+age = 28
+
+# bmi change
+bmi += 3.1
+
+# calculate new insurance cost with new bmi
+new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
+
+# calculate new change in insurance cost with new BMI
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+
+print("The change in estimated insurance cost after increasing BMI by 3.1 is " + str(change_in_insurance_cost) + " dollars.")
