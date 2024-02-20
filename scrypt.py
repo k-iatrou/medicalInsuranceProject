@@ -34,3 +34,17 @@ new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children +
 change_in_insurance_cost = new_insurance_cost - insurance_cost
 
 print("The change in estimated insurance cost after increasing BMI by 3.1 is " + str(change_in_insurance_cost) + " dollars.")
+
+# change bmi
+bmi = 26.2
+
+# change sex to male
+sex = 1
+
+# calculating new insurance cost with new sex
+new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
+
+# calculating new change in insurance cost with new sex
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+
+print("The change in estimated cost for being male instead of female is " + str(change_in_insurance_cost) + " dollars.")
